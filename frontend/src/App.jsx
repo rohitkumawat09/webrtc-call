@@ -4,7 +4,7 @@ import ringtoneFile from "./assets/ringtone.mp3";
 
 const socket = io("http://localhost:5000");
 
-export default function App() {
+ function App() {
   const localVideo = useRef(null);
   const remoteVideo = useRef(null);
   const peer = useRef(null);
@@ -321,3 +321,4 @@ export default function App() {
     </div>
   );
 }
+export default App;
