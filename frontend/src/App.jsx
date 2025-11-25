@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import ringtoneFile from "./assets/ringtone.mp3";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://webrtc-call-0ct8.onrender.com");
 
  function App() {
   const localVideo = useRef(null);

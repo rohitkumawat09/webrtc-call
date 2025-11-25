@@ -8,7 +8,7 @@ app.use(cors());
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "*", methods: ["GET", "POST"] },
+  cors: { origin: "https://webrtc-call-1-ebe9.onrender.com", methods: ["GET", "POST"] },
 });
 
 io.on("connection", (socket) => {
