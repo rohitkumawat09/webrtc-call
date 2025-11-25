@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
+import ringtoneFile from "./assets/ringtone.mp3";
 
 const socket = io("http://localhost:5000");
 
@@ -8,7 +9,7 @@ export default function App() {
   const remoteVideo = useRef(null);
   const peer = useRef(null);
 
-  const ringtone = useRef(new Audio("../assets/ringtone.mp3"));
+  const ringtone = useRef(new Audio(ringtoneFile));
 
   const [joined, setJoined] = useState(false);
   const [incoming, setIncoming] = useState(false);
